@@ -5,12 +5,20 @@
 	font-family: system-ui, sans-serif;
 }
 :root {
+	--color-js: rgb(240, 219, 79);
+	--color-jsB: rgb(50, 51, 48);
 	--accent: 124, 58, 237;
-	--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	/* --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%); */
+	--accent-gradient: linear-gradient(45deg, rgb(240, 219, 79), rgb(112, 97, 0) 30%, white 80%);
 }
 
 html {
-	background-color: #F6F6F6;
+	color: #dadada;
+}
+
+body{
+	overflow: hidden;
+	height: 100vh;
 }
 
 code {
@@ -20,8 +28,45 @@ code {
 
 a{
     text-decoration: none;
+	color: var(--color-js);
+}
+a:hover{
+	color: rgb(112, 97, 0);
 }
 
 li{
     list-style: none;
 }
+
+.gradient{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: radial-gradient(circle 700px, rgb(25, 25, 25), rgb(0, 0, 0));
+	width: 100%;
+	height: 100%;
+}
+.title {
+	font-size: 2.25rem;
+	font-weight: 800;
+	margin: 0;
+}
+
+/* Personalizar scrollbar en Chrome y Safari */
+::-webkit-scrollbar {
+	width: 6px; /* Ancho del scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+	/* background: #f1f1f1; Color del fondo del track del scrollbar */
+	background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background: var(--color-jsB); /* Color del thumb (barra deslizable) del scrollbar */
+	border-radius: 5px; /* Bordes redondeados para el thumb */
+  }
+
+/* span{
+	color: var(--color-js);
+} */

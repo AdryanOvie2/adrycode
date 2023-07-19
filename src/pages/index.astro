@@ -3,48 +3,60 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Adrycode">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<div class="container">
+			<h1 class="title">Adryan Oviedo<span class="text-gradient"> gradient</span></h1>
+			<p>Hey, I am Adrian Oviedo, a fanatical open sourceror.</p>
+			<div>
+				<p>I am:</p>
+				<p>Working at  Echate_esto.</p>
+				<p>Creating Web in Astro, React, NextJs and Strapi</p>
+				<p>Core team member of Echate_esto.</p>
+			</div>
+			<p>"Dreaming up ideas and making them come true is where my passion lies."</p>
+			<p>Outside of programming, I enjoy doing desingns. Some of my desings can be found on Instagram.</p>
+			<hr class="divider">
+			<p>Find me on</p>
+			<p class="socialMedia">
+				<a href="#">
+					<span>icon</span>
+					Github
+				</a>
+				<a href="#">
+					<span>icon</span>
+					Twitter
+				</a>
+				<a href="#">
+					<span>icon</span>
+					Linkedin
+				</a>
+				<a href="#">
+					<span>icon</span>
+					Instagram
+				</a>
+			</p>
+			<p>I hope you enjoy my works :)</p>
+		</div>
 	</main>
 </Layout>
 
 <style>
 	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+		height: 100%;
+		position: relative;
+		overflow-y: auto;
+		padding: 2.5rem 0;
+		display: flex;
+		place-items: center;
+		justify-content: center;
 	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
+	.container{
+		width: 70ch;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -53,29 +65,14 @@ import Card from '../components/Card.astro';
 		background-size: 400%;
 		background-position: 0%;
 	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
+	.divider{
+		width: 10%;
+		margin: auto;
+		border-color: var(--color-jsB);
 	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+	.socialMedia{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 </style>
