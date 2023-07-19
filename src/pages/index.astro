@@ -1,16 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Icon from '../components/icon.astro';
 
 ---
 
 <Layout title="Adrycode">
 	<main>
 		<div class="container">
-			<h1 class="title">Adryan Oviedo<span class="text-gradient"> gradient</span></h1>
+			<h1 class="title">Adryan Oviedo<span class="icon"><Icon/></span></h1>
 			<p>Hey, I am Adrian Oviedo, a fanatical open sourceror.</p>
 			<div>
-				<p>I am:</p>
+				<>I am: </p>
 				<p>Working at  Echate_esto.</p>
 				<p>Creating Web in Astro, React, NextJs and Strapi</p>
 				<p>Core team member of Echate_esto.</p>
@@ -56,6 +56,7 @@ import Card from '../components/Card.astro';
 		display: flex;
 		place-items: center;
 		justify-content: center;
+		line-height: 1.7;
 	}
 	.container{
 		width: 70ch;
@@ -79,6 +80,7 @@ import Card from '../components/Card.astro';
 	.socialMedia{
 		display: flex;
 		flex-wrap: wrap;
+		gap: .5rem;
 		justify-content: space-between;
 	}
 	.socialMedia a{
@@ -88,5 +90,10 @@ import Card from '../components/Card.astro';
 	}
 	.socialMedia a span{
 		display: flex;
+	}
+	.title{
+		display: flex;
+		gap: 1rem;
+		
 	}
 </style>

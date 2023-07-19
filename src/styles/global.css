@@ -48,17 +48,17 @@ li{
 /* Personalizar scrollbar en Chrome y Safari */
 ::-webkit-scrollbar {
 	width: 6px; /* Ancho del scrollbar */
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	/* background: #f1f1f1; Color del fondo del track del scrollbar */
 	background: transparent;
-  }
+}
   
   ::-webkit-scrollbar-thumb {
 	background: var(--color-jsB); /* Color del thumb (barra deslizable) del scrollbar */
 	border-radius: 5px; /* Bordes redondeados para el thumb */
-  }
+}
 
 /* span{
 	color: var(--color-js);
