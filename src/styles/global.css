@@ -8,7 +8,6 @@
 	--color-js: rgb(240, 219, 79);
 	--color-jsB: rgb(50, 51, 48);
 	--accent: 124, 58, 237;
-	/* --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%); */
 	--accent-gradient: linear-gradient(45deg, rgb(240, 219, 79), rgb(112, 97, 0) 30%, white 80%);
 }
 
@@ -20,7 +19,9 @@ body{
 	background-image: radial-gradient(circle 700px, rgb(25, 25, 25), rgb(0, 0, 0));
 	width: 100%;
 	height: 100%;
+	transition: background-image .3s;
 }
+  
 code {
 	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 	Bitstream Vera Sans Mono, Courier New, monospace;
@@ -36,6 +37,12 @@ a:hover{
 
 li{
     list-style: none;
+}
+
+footer{
+	padding: 1rem;
+	margin: auto;
+	max-width: 75ch;
 }
 
 
@@ -60,6 +67,14 @@ li{
 	border-radius: 5px; /* Bordes redondeados para el thumb */
 }
 
-/* span{
-	color: var(--color-js);
-} */
+/* modo light */
+.light {
+	background-image: radial-gradient(circle 700px, rgb(232, 232, 232), rgb(255, 255, 255));
+	color: var(--color-jsB);
+}
+.light a{
+	color: black;
+}
+.light svg{
+	fill: black;
+}

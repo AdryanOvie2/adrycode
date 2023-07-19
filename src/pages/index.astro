@@ -1,13 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Icon from '../components/icon.astro';
+import Layout from '../layouts/Layout.astro'
+import Logo from '../components/header/logo.astro'
 
 ---
 
 <Layout title="Adrycode">
 	<main>
 		<div class="container">
-			<h1 class="title">Adryan Oviedo<span class="icon"><Icon/></span></h1>
+			<span><Logo/></span>
 			<p>Hey, I am Adrian Oviedo, a fanatical open sourceror.</p>
 			<div>
 				<>I am: </p>
@@ -87,6 +87,7 @@ import Icon from '../components/icon.astro';
 		display: flex;
 		align-items: center;
 		gap: .3rem;
+		transition: border-bottom ease-in-out .3s;
 	}
 	.socialMedia a span{
 		display: flex;
