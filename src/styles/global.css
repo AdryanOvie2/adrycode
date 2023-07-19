@@ -20,7 +20,14 @@ body{
 	overflow: hidden;
 	height: 100vh;
 }
-
+.gradient{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: radial-gradient(circle 700px, rgb(25, 25, 25), rgb(0, 0, 0));
+	width: 100%;
+	height: 100%;
+}
 code {
 	font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 	Bitstream Vera Sans Mono, Courier New, monospace;
@@ -38,14 +45,7 @@ li{
     list-style: none;
 }
 
-.gradient{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-image: radial-gradient(circle 700px, rgb(25, 25, 25), rgb(0, 0, 0));
-	width: 100%;
-	height: 100%;
-}
+
 .title {
 	font-size: 2.25rem;
 	font-weight: 800;
