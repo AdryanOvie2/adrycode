@@ -78,3 +78,20 @@ footer{
 .light svg{
 	fill: black;
 }
+
+/* index */
+main {
+	min-height: 70dvh;
+	padding: 2.5rem;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	line-height: 1.7;
+}
+.container{
+	width: 70ch;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}

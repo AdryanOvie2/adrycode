@@ -1,6 +1,7 @@
 ---
 import '../../styles/menu.css'
 import Icon from '../icon.astro'
+import Menu from './menu.astro'
 
 const theme = false;
 
@@ -9,12 +10,7 @@ const theme = false;
 <header>
     <Icon/>
     <nav>
-        <ul class="menu">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Podcast</a></li>
-            <li><a href="#">Github</a></li>
-        </ul>
+        <Menu/>
         <button id="themeToggle" class="trigger">
             {theme ? <box-icon name="sun" type="solid" color="black"/> : <box-icon name="moon" type="solid"  color="black"/>}
         </button>
