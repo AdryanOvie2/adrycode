@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-import GithubIcon from '../components/icons/github.astro'
+
 ---
 
 <Layout title="Adrycode">
@@ -21,19 +21,27 @@ import GithubIcon from '../components/icons/github.astro'
 			<p>Find me on</p>
 			<p class="socialMedia">
 				<a href="#">
-					<span>icon</span>
+					<span>
+						<box-icon type='logo' name='github' color='#f0db4f'></box-icon>
+					</span>
 					Github
 				</a>
 				<a href="#">
-					<span>icon</span>
+					<span>
+						<box-icon name='twitter' type='logo' color='#f0db4f' ></box-icon>
+					</span>
 					Twitter
 				</a>
 				<a href="#">
-					<span>icon</span>
+					<span>
+						<box-icon name='linkedin' type='logo' color='#f0db4f' ></box-icon>
+					</span>
 					Linkedin
 				</a>
 				<a href="#">
-					<span>icon</span>
+					<span>
+						<box-icon name='instagram' type='logo' color='#f0db4f' ></box-icon>
+					</span>
 					Instagram
 				</a>
 			</p>
@@ -44,7 +52,7 @@ import GithubIcon from '../components/icons/github.astro'
 
 <style>
 	main {
-		padding: 2.5rem 0;
+		padding: 2.5rem;
 		display: flex;
 		place-items: center;
 		justify-content: center;
@@ -72,5 +80,13 @@ import GithubIcon from '../components/icons/github.astro'
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+	}
+	.socialMedia a{
+		display: flex;
+		align-items: center;
+		gap: .3rem;
+	}
+	.socialMedia a span{
+		display: flex;
 	}
 </style>
