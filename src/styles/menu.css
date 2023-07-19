@@ -1,12 +1,11 @@
 header{
-    position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    color: crimson;
+    padding: 2rem;
+    color: var(--color-js);
 }
 .menu{
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
