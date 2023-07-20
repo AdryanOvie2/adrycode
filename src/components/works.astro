@@ -6,6 +6,9 @@
     .hidden{
         display: none;
     }
+    .flex{
+        display: flex;
+    }
     .works-tabs{
         display: flex;
         gap: 1rem;
@@ -17,6 +20,10 @@
             padding: .5rem 1rem;
             font-size: 1rem;
             cursor: pointer;
+        }
+        .work-content{
+            padding-top: 1rem;
+            transition: display ease-in-out 10s;
         }
     .active{
         border-bottom: 1px solid var(--color-js);
@@ -31,16 +38,18 @@
     </div>
 
     <section id="tech" class="work-content">
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
-        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='html5'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='css3'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='bootstrap'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='javascript'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='git'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='github'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='nodejs'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='react'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='tailwind-css'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='typescript'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='mongodb'></box-icon>
+        <box-icon size="5rem" color="#ffffff" type='logo' name='figma'></box-icon>
     </section>
     <section id="project" class="work-content hidden">
         <h3>Projects</h3>
