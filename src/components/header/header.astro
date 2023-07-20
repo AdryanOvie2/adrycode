@@ -18,10 +18,6 @@ const theme = false;
 </header>
 
 <script>
-    const sun  = '<box-icon name="moon" type="solid"  color="black"/>'
-    const moon = '<box-icon name="sun" type="solid" color="black"/>'
-    const trigger = document.getElementById('trigger');
-
     const theme = (() => {
         if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
         return localStorage.getItem('theme');
