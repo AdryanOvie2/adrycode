@@ -7,10 +7,14 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "astro": "^2.8.5",
     "boxicons": "^2.1.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
