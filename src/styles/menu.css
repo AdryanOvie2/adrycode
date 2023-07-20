@@ -28,18 +28,6 @@ header nav{
     border: none;
 }
 
-/* #themeToggle {
-    border: 0;
-    background: none;
-  }
-  .sun { fill: #f0db4f; }
-  .moon { fill: transparent; }
-  
-
-  :global(.dark) .sun { fill: transparent; }
-  :global(.dark) .moon { fill: white; } */
-
-
 @media (width >= 1000px){
 	header{
         flex-direction: row;

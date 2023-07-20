@@ -1,0 +1,69 @@
+---
+
+---
+
+<style>
+    .hidden{
+        display: none;
+    }
+    .works-tabs{
+        display: flex;
+        gap: 1rem;
+    }
+        .work-links{
+            border: none;
+            background: none;
+            color: #dadada;
+            padding: .5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    .active{
+        border-bottom: 1px solid var(--color-js);
+        transition: border-bottom .3s;
+    }
+</style>
+
+<section class="works">
+    <div class="works-tabs">
+        <button class="work-links active">Technologys</button>
+        <button class="work-links">Projects</button>
+    </div>
+
+    <section id="tech" class="work-content">
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+        <box-icon type='logo' name='html5'></box-icon>
+    </section>
+    <section id="project" class="work-content hidden">
+        <h3>Projects</h3>
+    </section>
+</section>
+
+<script>
+
+
+    const buttons = document.querySelectorAll('button.work-links');
+    const tabs = document.querySelectorAll('section.work-content');
+
+    buttons.forEach((button, i) => {
+        button.addEventListener('click', () => {
+            // Agregar la clase "active" al botón que se hizo clic
+            buttons.forEach((btn) => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Ocultar todas las tabs
+            tabs.forEach((tab) => tab.classList.add('hidden'));
+
+            // Mostrar solo la tab correspondiente al botón que se hizo clic
+            tabs[i].classList.remove('hidden');
+        });
+    });
+</script>
