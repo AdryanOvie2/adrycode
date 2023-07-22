@@ -42,16 +42,15 @@ li{
 }
 
 footer{
-	width: 100%;
-	margin: auto;
-	padding-bottom: 2rem;
+	padding-bottom: 2.5rem;
 	display: flex;
+	place-items: center;
 	justify-content: center;
 }
 	footer p{
-		max-width: 70ch;
-		padding-left: 2.5rem;
-		padding-bottom: 2.5rem;
+		width: 70ch;
+		margin: auto;
+		display: flex;
 	}
 
 
