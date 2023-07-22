@@ -42,10 +42,15 @@ li{
 }
 
 footer{
+	width: 100%;
 	margin: auto;
-	width: 70ch;
 	padding-bottom: 2rem;
+	display: flex;
+	justify-content: center;
 }
+	footer p{
+		width: 70ch;
+	}
 
 
 .title {
