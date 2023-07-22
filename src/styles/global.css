@@ -41,9 +41,8 @@ li{
 }
 
 footer{
-	padding: 1rem;
-	margin: auto;
-	max-width: 75ch;
+	width: 70ch;
+	padding-bottom: 2rem;
 }
 
 
