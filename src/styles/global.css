@@ -21,6 +21,7 @@ body{
 	width: 100%;
 	height: 100%;
 	transition: background-image .3s;
+	overflow-x: hidden;
 }
   
 code {
@@ -41,6 +42,7 @@ li{
 }
 
 footer{
+	margin: auto;
 	width: 70ch;
 	padding-bottom: 2rem;
 }
