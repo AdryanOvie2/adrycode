@@ -42,7 +42,7 @@ li{
 }
 
 footer{
-	padding-bottom: 2.5rem;
+	padding: 0 2.5rem 2.5rem 2.5rem;
 	display: flex;
 	place-items: center;
 	justify-content: center;
