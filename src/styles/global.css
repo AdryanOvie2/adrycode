@@ -7,6 +7,7 @@
 :root {
 	--color-js: rgb(240, 219, 79);
 	--color-jsB: rgb(50, 51, 48);
+	--color-w: #f7f7f7;
 	--accent: 124, 58, 237;
 	--accent-gradient: linear-gradient(45deg, rgb(240, 219, 79), rgb(112, 97, 0) 30%, white 80%);
 }

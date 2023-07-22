@@ -1,0 +1,35 @@
+
+.hidden{
+    display: none;
+}
+.flex{
+    display: flex;
+}
+.works-tabs{
+    display: flex;
+    gap: 1rem;
+}
+    .work-links{
+        border: none;
+        background: none;
+        color: #dadada;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .work-content{
+        text-align: center;
+        padding-top: 1rem;
+        transition: display ease-in-out 10s;
+    }
+    .work-content box-icon{
+        fill: var(--color-js);
+        transition: .3s;
+    }
+    .work-content box-icon:hover{
+        fill: var(--color-w);
+    }
+.active{
+    border-bottom: 1px solid var(--color-js);
+    transition: border-bottom .3s;
+}
