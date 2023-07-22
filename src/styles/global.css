@@ -49,7 +49,9 @@ footer{
 	justify-content: center;
 }
 	footer p{
-		width: 70ch;
+		max-width: 70ch;
+		padding-left: 2.5rem;
+		padding-bottom: 2.5rem;
 	}
 
 
@@ -65,7 +67,6 @@ footer{
 }
   
 ::-webkit-scrollbar-track {
-	/* background: #f1f1f1; Color del fondo del track del scrollbar */
 	background: transparent;
 }
   
